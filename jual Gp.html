@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pusat Order & Dukungan</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 450px;
+            background: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        /* Bagian Profil */
+        .profile-img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: #25d366;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 40px;
+            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3);
+        }
+
+        .profile-name {
+            font-size: 22px;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        .profile-desc {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin-bottom: 25px;
+        }
+
+        /* Daftar Tautan / Tombol */
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 20px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 15px;
+            color: white;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+
+        .btn i {
+            font-size: 20px;
+        }
+
+        .btn-text {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        /* Warna Tombol Khusus */
+        .btn-whatsapp {
+            background-color: #25D366;
+        }
+
+        .btn-channel {
+            background-color: #128C7E;
+        }
+
+        .btn-instagram {
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        }
+
+        .btn-saweria {
+            background-color: #f39c12;
+        }
+
+        /* Footer Kecil */
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Foto / Logo Profil -->
+        <div class="profile-img">
+            <i class="fa-solid fa-store"></i>
+        </div>
+        
+        <h1 class="profile-name">Order & Support Here</h1>
+        <p class="profile-desc">Silakan pilih tautan di bawah untuk order atau donate!</p>
+
+        <!-- Kumpulan Tombol Tautan -->
+        <div class="links-container">
+            <!-- Tombol WhatsApp Order -->
+            <a href="https://wa.me/6287785509299?text=Halo%20Min,%20saya%20mau%20beli%20Gamepass." target="_blank" class="btn btn-whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span class="btn-text">Chat WhatsApp (Order)</span>
+                <i class="fa-solid fa-chevron-right" style="font-size: 12px;"></i>
+            </a>
+
+            <!-- Tombol Saluran WhatsApp -->
+            <a href="https://whatsapp.com/channel/0029Vb8pHLRKWEKpYOJjCt1n" target="_blank" class="btn btn-channel">
+                <i class="fa-solid fa-bullhorn"></i>
+                <span class="btn-text">Gabung Saluran WhatsApp</span>
+                <i class="fa-solid fa-chevron-right" style="font-size: 12px;"></i>
+            </a>
+
+            <!-- Tombol Instagram -->
+            <a href="https://www.instagram.com/ryynerr?igsh=MTNjZjV2b3Z0bHl4Mg==" target="_blank" class="btn btn-instagram">
+                <i class="fa-brands fa-instagram"></i>
+                <span class="btn-text">Kunjungi Instagram</span>
+                <i class="fa-solidжли" style="display:none;"></i>
+                <i class="fa-solid fa-chevron-right" style="font-size: 12px;"></i>
+            </a>
+
+            <!-- Tombol Saweria -->
+            <a href="https://saweria.co/reyyner" target="_blank" class="btn btn-saweria">
+                <i class="fa-solid fa-mug-hot"></i>
+                <span class="btn-text">Traktir / Donate (Saweria)</span>
+                <i class="fa-solid fa-chevron-right" style="font-size: 12px;"></i>
+            </a>
+        </div>
+
+        <div class="footer">
+            &copy; 2026 • All Rights Reserved
+        </div>
+    </div>
+
+</body>
+</html>
